@@ -1,0 +1,109 @@
+*{
+
+    font-family: 'Macondo', cursive;
+
+    color:rgb(36, 21, 12);
+    background-image: url('./images/sky.jfif');
+    background-repeat: no-repeat;
+ background-attachment: fixed;
+  background-size: cover;
+
+}
+img{
+
+    height: 100px;
+
+    width: 100px;
+
+    border: 1px solid black;
+
+    margin: 10px;
+
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.nav{
+    margin-top: 10px;
+    margin-left: 80px;
+    height:10vh;
+    width: 100vw;  
+    position:fixed;
+    background-color:brown;
+
+}
+.img1{
+    height:100px;
+    width:100px;
+    border-radius: 30px;
+}
+ul {
+    list-style-type: none;
+ 
+    font-size: 12px;
+    font-weight: bolder;
+    padding-right: 10px;
+    margin: 0;
+
+  }
+  a{
+      text-decoration: none;
+      color: rgb(141,41,11);
+  }
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+.heading{
+      
+    
+    font-size: 60px;
+    font-family: 'Cookie', cursive;
+text-align: center;
+margin-top: 2%;
+    
+}
+
+
+div.slogantext {
+    margin-left:25%;
+
+    animation: fadeInAnimation ease 5s;
+
+    animation-iteration-count: 1;
+
+    animation-fill-mode: forwards;
+
+    animation-iteration-count: infinite;
+
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(99, 94, 94, 0.842));
+
+}
+
+ 
+
+@keyframes fadeInAnimation {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+     }
+
+}
+.scroll{
+    overflow-y: scroll;
+  height:60px;
+    margin-block:none;
+}

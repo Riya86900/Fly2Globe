@@ -1,0 +1,258 @@
+*{
+    font-family: 'Macondo', cursive;
+}
+body{
+ background-image: url('./images/background.jpg');
+   background-repeat: no-repeat;
+ background-attachment: fixed;
+  background-size: cover;
+  margin:0;
+  padding: 0;
+  }
+.nav{
+    margin-top: 10px;
+    height:10vh;
+    width: 100vw;
+    position: fixed; 
+    font-family: 'Cookie', cursive;
+     ;
+   
+}
+.img1{
+    height:90px;
+    width:90px;
+    border-radius:5px;
+    border: #000;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-right: 10px;
+    margin: 0;
+
+  }
+  a{
+      text-decoration: none;
+      color: rgb(141,41,11);
+  }
+  li:hover{
+      font-size: 30px;
+      
+      border-radius: 5px;
+      text-decoration: underline;
+
+      
+
+  }
+  #login{
+ height:450px;
+ width:350px;
+
+ color:maroon;
+top:60%;
+left:30%;
+position: absolute;
+transform:translate(-50%,-50%);
+box-sizing: border-box;
+ border-radius: 30px;
+ padding:60px 30px;
+ 
+ box-shadow: rgb(170, 25, 184);
+ font-family: 'Cookie', cursive;
+ font-size: 30px;
+
+  }
+
+  h1{
+
+
+    
+      font-size: 30px ;
+
+      margin-left: 17%;
+      margin-top: 3%;
+      font-family: 'Cookie', cursive;
+  }
+  h2{
+    font-size: 40px ;
+    margin-top:-5%;
+    margin-left: 15%;
+    font-family: 'Kaushan Script', cursive;
+  }
+  h3{
+    font-size: 30px ;
+    margin-top:-5%;
+    margin-left: 15%;
+    font-family: 'Cookie', cursive;
+  }
+  .heading{
+      
+    
+      font-size: 50px;
+      font-family: 'Kaushan Script', cursive;
+  }
+ 
+  label{
+      margin: 0;
+      padding: 0;
+      font-weight: bolder;
+  }
+  #login input{
+      width:100%;
+      margin-bottom: 20px;
+  }
+  #login input[type="email"], input[type="password"]
+  {
+      border:none;
+      border-bottom: 1px solid rgb(231, 106, 106);
+      background: transparent;
+      outline:none;
+      height:40px;
+      color:rgb(119, 76, 76);
+      font-size:25px;
+  }
+  #login .booking
+  {
+      border:none;
+      outline: navajowhite;
+      height: 40px;
+      background: rgba(248, 151, 6, 0.548);
+      color:rgb(32, 11, 11);
+      font-size: 18px;
+      border-radius: 20px;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
+      text-align:center;
+  }
+  #login .booking:hover{
+      cursor: pointer;
+      background: #8707ff;
+      color:#000;
+  }
+  #login a{
+      text-decoration: none;
+      font-size: 12px;
+      line-height:20px;
+      color:rgb(20, 20, 20);
+  }
+  #login a:hover{
+      color:purple;
+  }
+  .nav-inner{
+      text-align: left;
+      display: flex;
+      justify-content:space-around;
+      width:30%;
+      margin-left: 60%;
+      font-family:cursive;
+      margin-top: -40%;
+      position:fixed;
+      
+
+  }
+  .image{
+      margin-top: -4%;
+    height: 100vh;
+    width: 7vw;
+    background-color:beige;
+    margin-left:-3%;
+    border-radius: 10px;
+  }
+  .image:hover{
+      width:15vw;
+      
+      transition: all 0.5s ease-in-out;
+  }
+  .image:hover::after{
+      content:'Profile';
+  }
+  
+.fly{
+    margin-left: 80%;
+    margin-top: 10%;
+   
+    
+    
+    
+   
+}
+
+@keyframes fly{
+        from{
+            padding-top: 400px;
+                opacity: 0;
+                line-height:80px;
+        }
+
+        to {
+          padding-top: 0;
+          opacity: 1; 
+        } 
+}
+.box {
+	
+	box-sizing: border-box;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+    border: 5px;
+
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	
+	background: repeating-linear-gradient(
+			white 0%,
+			white 7.5px,
+			hotpink 7.5px,
+			hotpink 15px,
+			white 15px,
+			white 22.5px,
+			hotpink 22.5px,
+			hotpink 30px);
+	transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+	animation: animate 20s linear infinite;
+}
+
+.box .content {
+	position: relative;
+	background-color: white;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 30px;
+	text-align: center;
+	font-family: sans-serif;
+	z-index: 2;
+}
+
+.box,
+.box .content {
+	box-shadow: 0 0 2px deeppink,
+				0 0 5px rgba(0, 0, 0, 1),
+				inset 0 0 5px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+}
+
+.box .content h2 {
+	color: deeppink;
+}
+
+.box .content p {
+	color: dimgray;
+}
+
+@keyframes animate {
+	from {
+		background-position: 0;
+	}
+
+	to {
+		background-position: 0 450px;
+	}
+}
